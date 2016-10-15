@@ -12,7 +12,6 @@ tokenForUser = (user) => {
 }
 
 exports.signup = (req, res, next) => {
-  console.log(req.body)
   const email = req.body.email;
   const username = req.body.username;
   const password = req.body.password;
@@ -51,7 +50,7 @@ exports.getUser = (req, res) => {
   if (token) {
     try {
       const decoded = jwt.decode(token, config.secret);
-      User.findById(decode.sub, (err, user) => {
+      User.findById(decoded.sub, (err, user) => {
         user = user;
         res.send(user);
       });

@@ -1,8 +1,43 @@
+
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #efefef !important;
 }
 
 a {
   color: #00B7FF;
+}
+
+.error {
+  color: red;
+}
+
+.navbar-right {
+  margin-right: 15px !important;
+}
+.hidden {
+  display:none;
+}
+.navbar-logo-bms {
+  font-size: 36px;
+  top: 3px;
+  color: #D3D3D3;
+  padding: 0 0 0 11px;
+}
+
+.navbar-links-bms > li > a{
+  color: black;
+  font-size: 24px;
+}
+
+.body-spacing {
+  white-space: pre-line;
+}
+
+.init-hidden {
+  display: none;
+}
+
+.table-row:hover {
+  cursor: pointer;
 }
